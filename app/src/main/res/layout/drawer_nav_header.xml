@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.xh.study.niconico.widget.AutoClipLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fit_targetId="@+id/user_layout">
+
+        <ImageView
+            android:id="@+id/nav_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/image_chara_bg_repeat"/>
+
+        <LinearLayout
+            android:id="@+id/user_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24.0dip"
+                android:layout_marginEnd="@dimen/basic_space"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.xh.study.niconico.widget.CircleImageView
+                    android:id="@+id/img_authenticated_user_icon"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginEnd="@dimen/basic_space"
+                    android:src="@drawable/icon_user_notlogin" />
+
+                <TextView
+                    android:id="@+id/txt_authenticated_user_name"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="name"
+                    android:textColor="@android:color/white"
+                    android:textSize="22.0sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_drawer_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24.0dip"
+                android:layout_marginBottom="24.0dip"
+                android:layout_marginTop="@dimen/basic_space"
+                android:layout_marginRight="24.0dip"
+                style="@style/LoginButton"
+                android:text="ログイン" />
+        </LinearLayout>
+
+    </com.xh.study.niconico.widget.AutoClipLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_more"
+    style="@style/PrimaryColorGrayBackgroundActionButton"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/min_component_size"
+    android:text="もっと見る"
+    android:textStyle="bold" />

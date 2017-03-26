@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/basic_half_space"
+        android:background="@color/primary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HomeFavoriteDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40.0dip"
+                android:text="@string/home_favorite_description" />
+
+            <ImageView
+                android:id="@+id/img_chara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26.0dip"
+                android:adjustViewBounds="true"
+                android:maxWidth="298.0dip"
+                android:src="@drawable/image_favorite_empty" />
+
+            <ImageView
+                android:id="@+id/img_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/image_favorite_message_login" />
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/LoginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40.0dip"
+                android:layout_marginRight="40.0dip"
+                android:layout_marginTop="@dimen/basic_space"
+                android:text="ログイン" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

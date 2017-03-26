@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xh.study.niconico.widget.ExtraTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/PrimaryButtonWidget"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/basic_space"
+    android:clickable="true"
+    android:gravity="center"
+    android:paddingBottom="@dimen/basic_space"
+    android:paddingLeft="48.0dip"
+    android:paddingRight="48.0dip"
+    android:paddingTop="@dimen/basic_space"
+    android:textColor="@android:color/black"
+    android:textSize="16.0sp"
+    android:textStyle="bold"
+    app:ext_txt_roundedCornerRadius="2.0dip" />

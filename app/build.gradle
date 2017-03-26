@@ -1,0 +1,91 @@
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    defaultConfig {
+        applicationId "com.xh.study.niconico"
+        minSdkVersion 22
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+// appcompat v7包是必须的
+    compile 'me.yokeyword:fragmentation:0.9.5'
+// 如果想使用SwipeBack 滑动边缘退出Fragment/Activity功能，请再添加下面的库
+    compile 'me.yokeyword:fragmentation-swipeback:0.7.9'
+
+    // EventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
+//    apt 'org.greenrobot:eventbus-annotation-processor:3.0.1'
+
+
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+//    compile 'com.android.support:support-v4:23.4.0'
+
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+
+    //图片加载/比例切割
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'jp.wasabeef:picasso-transformations:2.1.0'
+
+    //Rx库
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+
+    //Rx网络库
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+
+    //recycler的封装
+    compile 'me.alexrs:recyclerview-renderers:1.0.4'
+
+    //自定义控件
+    compile 'com.sothree.slidinguppanel:library:3.3.1'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile('com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE')
+
+    //图片颜色取值
+    compile 'com.android.support:palette-v7:23.4.0'
+    //compile 'com.github.chuross:expandablelayout:1.0.3'
+
+    //DB
+    compile 'com.snappydb:snappydb-lib:0.5.2'
+    compile 'com.esotericsoftware.kryo:kryo:2.24.0'
+
+    //注解
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+}

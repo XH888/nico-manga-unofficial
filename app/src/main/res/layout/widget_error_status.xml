@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.xh.study.niconico.widget.ExtraTextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/basic_space"
+            android:gravity="center_vertical"
+            android:text="@string/error_empty"
+            android:textColor="#ff333333"
+            android:textSize="20.0sp"
+            android:textStyle="bold"
+            app:ext_txt_drawable="@drawable/image_error"
+            app:ext_txt_drawableHeightSize="110.0dip"
+            app:ext_txt_drawableWidthSize="136.0dip" />
+
+        <LinearLayout
+            android:id="@+id/layout_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</merge>

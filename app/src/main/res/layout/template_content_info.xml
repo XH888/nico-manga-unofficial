@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!--占位-->
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/content_main_image_height" />
+    <!--toggle 显示-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/basic_space"
+        android:paddingRight="@dimen/basic_space"
+        android:paddingTop="@dimen/basic_space">
+
+        <LinearLayout
+            android:id="@+id/layout_official"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/basic_half_space"
+            android:orientation="horizontal">
+
+            <com.xh.study.niconico.widget.ExtraTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:text="公式"
+                android:textColor="@android:color/white"
+                android:textSize="11.0dip"
+                app:ext_txt_roundedCornerBackgroundColor="#ff666666"
+                app:ext_txt_roundedCornerRadius="8.0dip" />
+
+            <TextView
+                android:id="@+id/txt_official_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/basic_quarter_space"
+                android:textColor="#ff333333"
+                android:textSize="11.0dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/basic_half_space"
+            android:textColor="#ff333333"
+            android:textSize="22.0sp" />
+
+        <TextView
+            android:id="@+id/txt_display_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/basic_half_space"
+            android:textColor="#ff999999"
+            android:textSize="12.0dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.xh.study.niconico.widget.ExtraTextView
+                android:id="@+id/txt_player_type"
+                style="@style/ContentPropertyText" />
+
+            <com.xh.study.niconico.widget.ExtraTextView
+                android:id="@+id/txt_serial_status"
+                style="@style/ContentPropertyText" />
+
+            <com.xh.study.niconico.widget.ExtraTextView
+                android:id="@+id/txt_category"
+                style="@style/ContentPropertyText" />
+
+            <ImageView
+                android:id="@+id/img_adult_rating"
+                style="@style/MetaIcon"
+                android:src="@drawable/icon_attention_h" />
+
+            <ImageView
+                android:id="@+id/img_violence_rating"
+                style="@style/MetaIcon"
+                android:src="@drawable/icon_attention_g" />
+
+            <ImageView
+                android:id="@+id/img_boyslove_expression"
+                style="@style/MetaIcon"
+                android:src="@drawable/icon_attention_bl" />
+        </LinearLayout>
+
+        <com.xh.study.niconico.widget.ExpandableLayout
+            android:id="@+id/layout_expandable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/basic_space"
+            app:exl_collapseHeight="18.0sp"
+            app:exl_duration="350"
+            app:exl_expanded="false">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_description"
+                    style="@style/DescriptionText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/basic_double_space" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_expressions"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/basic_double_space"
+                    android:background="#ffeeeeee"
+                    android:padding="@dimen/basic_space">
+
+                    <TextView
+                        android:id="@+id/txt_caution"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/basic_half_space"
+                        android:text="この作品には次の表現が含まれています"
+                        android:textColor="#ff999999"
+                        android:textSize="14.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_caution"
+                        android:orientation="horizontal">
+
+                        <com.xh.study.niconico.widget.ExtraTextView
+                            android:id="@+id/txt_expression_adult"
+                            style="@style/ContentExpressionText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="性的な表現"
+                            app:ext_txt_drawable="@drawable/icon_attention_h" />
+
+                        <com.xh.study.niconico.widget.ExtraTextView
+                            android:id="@+id/txt_expression_violence"
+                            style="@style/ContentExpressionText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="過激な暴力描写"
+                            app:ext_txt_drawable="@drawable/icon_attention_g" />
+
+                        <com.xh.study.niconico.widget.ExtraTextView
+                            android:id="@+id/txt_expression_boys_love"
+                            style="@style/ContentExpressionText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ボーイズラブ"
+                            app:ext_txt_drawable="@drawable/icon_attention_bl" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/content_counters"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/basic_double_space"
+                    android:divider="@drawable/content_counter_divider"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+
+                    <com.xh.study.niconico.widget.CounterView
+                        android:id="@+id/view_counter"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        app:iconImageResourceId="@drawable/icon_view"
+                        app:text="再生(累計)" />
+
+                    <com.xh.study.niconico.widget.CounterView
+                        android:id="@+id/comment_counter"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        app:iconImageResourceId="@drawable/icon_comment"
+                        app:text="コメント(累計)" />
+
+                    <com.xh.study.niconico.widget.CounterView
+                        android:id="@+id/favorite_counter"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        app:iconImageResourceId="@drawable/icon_favorite_star_green"
+                        app:text="お気に入り" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/basic_half_space"
+                    android:text="作者"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/headline_font_size" />
+
+                <com.xh.study.niconico.widget.AuthorsView
+                    android:id="@+id/authors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/basic_double_space"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </com.xh.study.niconico.widget.ExpandableLayout>
+
+        <ToggleButton
+            android:id="@+id/btn_meta_info_toggle"
+            style="@style/ActionButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_selector"
+            android:gravity="center"
+            android:minHeight="@dimen/min_component_size"
+            android:checked="false"
+            android:textColor="@color/primary"
+            android:textOff="作品情報をすべて見る"
+            android:textOn="作品情報を閉じる"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/headline_font_size"
+            android:drawablePadding="@dimen/basic_half_space" />
+            <!--app:tbv_checked="false"-->
+            <!--app:tbv_textColor="@color/primary"-->
+            <!--app:tbv_textOff="作品情報をすべて見る"-->
+            <!--app:tbv_textOn="作品情報を閉じる"-->
+            <!--app:tbv_textSize="@dimen/headline_font_size"-->
+            <!--app:tbv_txt_drawableOff="@drawable/icon_expand_more"-->
+            <!--app:tbv_txt_drawableOn="@drawable/icon_expand_less"-->
+            <!--app:tbv_txt_drawablePadding="@dimen/basic_half_space"-->
+            <!--app:tbv_txt_drawableSize="24.0dip" />-->
+    </LinearLayout>
+
+    <View style="@style/HorizontalDarkBorder" />
+
+    <!--list信息-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffeeeeee"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/min_component_size"
+        android:orientation="horizontal"
+        android:padding="@dimen/basic_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/basic_half_space"
+            android:gravity="center_vertical"
+            android:text="エピソード一覧"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/paragraph_font_size"
+            android:textStyle="bold" />
+
+        <com.xh.study.niconico.widget.ExtraTextView
+            android:id="@+id/txt_episode_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="1.0dip"
+            android:paddingLeft="@dimen/basic_half_space"
+            android:paddingRight="@dimen/basic_half_space"
+            android:paddingTop="1.0dip"
+            android:text="-"
+            android:textColor="@color/primary"
+            android:textSize="12.0dip"
+            app:ext_txt_roundedCornerBorderColor="@color/primary"
+            app:ext_txt_roundedCornerBorderSize="1.0dip"
+            app:ext_txt_roundedCornerRadius="8.0dip" />
+    </LinearLayout>
+
+    <com.xh.study.niconico.widget.StatusView
+        android:id="@+id/status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40.0dip"
+        android:paddingTop="40.0dip" />
+</LinearLayout>

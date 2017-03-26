@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/txt_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff333333"
+        android:textSize="20.0dip" />
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/txt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ff999999"
+        android:textSize="11.0dip"
+        app:ext_txt_drawablePosition="left"
+        app:ext_txt_drawableSize="20.0dip" />
+</merge>

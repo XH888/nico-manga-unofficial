@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/player_transparent_bg">
+
+    <View
+        android:id="@+id/progress_place_holder"
+        android:layout_width="@dimen/player_toggle_size"
+        android:layout_height="@dimen/player_toggle_size"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@id/layout_expressions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/progress_place_holder"
+        android:layout_marginBottom="@dimen/basic_half_space"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="この作品には次の表現が含まれます"
+            android:textColor="#ff999999"
+            android:textSize="@dimen/paragraph_font_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.xh.study.niconico.widget.ExtraTextView
+                android:id="@id/txt_expression_adult"
+                style="@style/PlayerExpressionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性的な表現"
+                app:ext_txt_drawable="@drawable/icon_attention_h" />
+
+            <com.xh.study.niconico.widget.ExtraTextView
+                android:id="@id/txt_expression_violence"
+                style="@style/PlayerExpressionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="過激な暴力描写"
+                app:ext_txt_drawable="@drawable/icon_attention_g" />
+
+            <com.xh.study.niconico.widget.ExtraTextView
+                android:id="@id/txt_expression_boys_love"
+                style="@style/PlayerExpressionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ボーイズラブ"
+                app:ext_txt_drawable="@drawable/icon_attention_bl" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_scroll_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/player_menu_height">
+
+        <ImageView
+            android:layout_width="140.0dip"
+            android:layout_height="140.0dip"
+            android:src="@drawable/image_before_scroll" />
+    </LinearLayout>
+</RelativeLayout>

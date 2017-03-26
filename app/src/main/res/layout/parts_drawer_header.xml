@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <com.xh.study.niconico.widget.AutoClipLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:fit_targetId="@+id/layout_account_info">
+
+        <ImageView
+            android:id="@+id/img_account_info_bg"
+            android:src="@drawable/image_chara_bg_repeat"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:id="@id/layout_account_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100.0dip"
+            android:orientation="vertical"
+            android:paddingBottom="24.0dip"
+            android:paddingTop="24.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24.0dip"
+                android:layout_marginRight="@dimen/basic_space"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.xh.study.niconico.widget.CircleImageView
+                    android:id="@id/img_authenticated_user_icon"
+                    android:src="@drawable/icon_user_notlogin"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="@dimen/basic_space" />
+
+                <TextView
+                    android:id="@id/txt_authenticated_user_name"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="name"
+                    android:textColor="@android:color/white"
+                    android:textSize="22.0sp" />
+            </LinearLayout>
+
+            <!--<com.dd.ShadowLayout-->
+                <!--android:id="@id/layout_drawer_login"-->
+                <!--style="@style/ButtonWidget.Shadow"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="24.0dip"-->
+                <!--android:layout_marginRight="24.0dip"-->
+                <!--android:layout_marginTop="@dimen/basic_space">-->
+
+                <Button
+                    android:id="@id/btn_drawer_login"
+                    style="@style/LoginButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="24.0dip"
+                    android:layout_marginRight="24.0dip"
+                    android:layout_marginTop="@dimen/basic_space"
+
+                    android:text="ログイン" />
+            <!--</com.dd.ShadowLayout>-->
+        </LinearLayout>
+    </com.xh.study.niconico.widget.AutoClipLayout>
+
+
+    <LinearLayout android:visibility="gone"
+        android:id="@+id/layout_recent_read"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:orientation="vertical"
+        android:paddingBottom="24.0dip"
+        android:paddingLeft="@dimen/basic_space"
+        android:paddingRight="@dimen/basic_space"
+        android:paddingTop="24.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/basic_half_space"
+            android:text="最近読んだ作品"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/headline_font_size" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_recent_read"
+            style="@style/CardView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_recent_read_thumbnail"
+                    style="@style/EpisodeThumbnail"
+                    android:layout_width="86.0dip"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_recent_read_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/basic_space"
+                    android:layout_marginRight="@dimen/basic_space"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/paragraph_font_size" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <View style="@style/HorizontalDarkBorder" />
+</LinearLayout>

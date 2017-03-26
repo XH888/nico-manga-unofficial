@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/txt_player_menu_previous"
+        style="@style/PlayerMenuIconButton"
+        android:layout_centerVertical="true"
+        android:text="前の話"
+        app:ext_txt_drawable="@drawable/icon_chevron_left" />
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/txt_player_menu_next"
+        style="@style/PlayerMenuIconButton"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/txt_player_menu_previous"
+        android:text="次の話"
+        app:ext_txt_drawable="@drawable/icon_chevron_right" />
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/txt_player_menu_comment"
+        style="@style/PlayerMenuIconButton"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/txt_player_menu_next"
+        android:text="コメント"
+        app:ext_txt_drawable="@drawable/icon_comment_list" />
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/txt_player_menu_detail"
+        style="@style/PlayerMenuIconButton"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/txt_player_menu_comment"
+        android:text="詳細"
+        app:ext_txt_drawable="@drawable/icon_info" />
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/txt_player_menu_share"
+        style="@style/PlayerMenuIconButton"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/txt_player_menu_detail"
+        android:text="共有"
+        app:ext_txt_drawable="@drawable/icon_share" />
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/comment_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txt_player_menu_comment"
+        android:layout_marginBottom="-15.0dip"
+        android:layout_marginEnd="-30.0dip"
+        android:layout_toStartOf="@id/txt_player_menu_comment"
+        android:paddingBottom="1.0dip"
+        android:paddingLeft="4.0dip"
+        android:paddingRight="4.0dip"
+        android:paddingTop="1.0dip"
+        android:maxLines="1"
+        android:text="-"
+        android:textColor="@android:color/white"
+        android:textSize="10.0dip"
+        app:ext_txt_roundedCornerBackgroundColor="#fff40057"
+        app:ext_txt_roundedCornerRadius="8.0dip" />
+</merge>

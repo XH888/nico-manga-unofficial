@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="basic_space">16dp</dimen>
+    <dimen name="headline_font_size">16.0sp</dimen>
+    <dimen name="min_component_size">48.0dip</dimen>
+    <dimen name="toolbar_shadow_size">6.0dip</dimen>
+    <dimen name="title_font_size">20sp</dimen>
+    <dimen name="basic_half_space">8.0dip</dimen>
+    <dimen name="paragraph_font_size">14sp</dimen>
+    <dimen name="caption_font_size">11.0sp</dimen>
+    <dimen name="card_padding">6.0dip</dimen>
+    <dimen name="card_radius">4.0dip</dimen>
+    <dimen name="player_toggle_size">110.0dip</dimen>
+    <dimen name="basic_double_space">32.0dip</dimen>
+    <dimen name="basic_quarter_space">4.0dip</dimen>
+    <dimen name="content_main_image_height">180.0dip</dimen>
+
+    <dimen name="author_name_font_size">14.0dip</dimen>
+    <dimen name="player_menu_height">62.0dip</dimen>
+
+
+    <integer name="comment_fps">24</integer>
+</resources>

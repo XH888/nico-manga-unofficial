@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/txt_menu_first"
+        style="@style/ContentMenuButton"
+        android:text="最初から読む"
+        app:ext_txt_drawable="@drawable/icon_read_old" />
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/txt_menu_continue"
+        style="@style/ContentMenuButton"
+        android:text="続きから読む"
+        app:ext_txt_drawable="@drawable/icon_read_new" />
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/txt_menu_favorite"
+        style="@style/ContentMenuButton"
+        android:text="お気に入り"
+        app:ext_txt_drawable="@drawable/icon_favorite_star" />
+
+</merge>

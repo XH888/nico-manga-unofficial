@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/card_padding">
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/basic_space"
+        android:textColor="@android:color/white"
+        android:textSize="18.0sp"
+        app:ext_txt_drawableHeightSize="70.0dip"
+        app:ext_txt_drawablePosition="left"
+        app:ext_txt_drawableWidthSize="58.0dip" />
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="70.0dip"-->
+        <!--android:background="@color/primary"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingEnd="@dimen/basic_space"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="18.0sp"-->
+        <!--android:drawableStart="@drawable/image_pickup_title"-->
+        <!--android:text="1111"-->
+        <!--/>-->
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        style="@style/Custom.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--w16:h9-->
+            <com.xh.study.niconico.widget.RatioImageView
+                android:id="@+id/img_thumbnail"
+                style="@style/CardViewThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ariv_heightRatio="9"
+                app:ariv_widthRatio="16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/basic_space">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:textColor="#ff333333"
+                    android:textSize="@dimen/paragraph_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_author_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#ff999999"
+                    android:textSize="@dimen/caption_font_size" />
+
+                <TextView
+                    android:id="@+id/txt_attention_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/caption_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

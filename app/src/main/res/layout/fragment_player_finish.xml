@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_player_finish_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View style="@style/HorizontalDarkBorder" />
+
+    <TextView
+        android:id="@+id/txt_description"
+        style="@style/DescriptionText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/basic_space" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@drawable/content_counter_divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginLeft="@dimen/basic_space"
+        android:layout_marginRight="@dimen/basic_space"
+        android:layout_marginTop="@dimen/basic_half_space"
+        android:text="作者"
+        android:textColor="#ff333333"
+        android:textSize="@dimen/headline_font_size" />
+
+    <com.xh.study.niconico.widget.AuthorsView
+        android:id="@+id/authors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/basic_double_space"
+        android:layout_marginLeft="@dimen/basic_space"
+        android:layout_marginRight="@dimen/basic_space"
+        android:orientation="vertical" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@drawable/content_counter_divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/content_counter_divider"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <com.xh.study.niconico.widget.TransitionEpisodeView
+            android:id="@+id/prev_transition_episode"
+            style="@style/PlayerTransitionEpisodeView"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            app:te_label="前の話"
+            app:te_type="prev" />
+
+        <com.xh.study.niconico.widget.TransitionEpisodeView
+            android:id="@+id/next_transition_episode"
+            style="@style/PlayerTransitionEpisodeView"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            app:te_label="次の話"
+            app:te_type="next" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@drawable/content_counter_divider" />
+
+    <!--<com.dd.ShadowLayout-->
+        <!--style="@style/ButtonWidget.Shadow"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/basic_double_space"-->
+        <!--android:layout_marginRight="@dimen/basic_double_space"-->
+        <!--android:layout_marginTop="@dimen/basic_double_space">-->
+
+        <com.xh.study.niconico.widget.ExtraTextView
+            android:id="@+id/btn_favorite_add"
+            style="@style/PrimaryButtonWidget"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="70.0dip"
+            android:padding="@dimen/basic_space"
+            app:ext_txt_drawable="@drawable/icon_favorite_star"
+            app:ext_txt_drawableSize="32.0dip" />
+    <!--</com.dd.ShadowLayout>-->
+
+    <!--<com.dd.ShadowLayout-->
+        <!--style="@style/ButtonWidget.Shadow"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/basic_double_space"-->
+        <!--android:layout_marginLeft="@dimen/basic_double_space"-->
+        <!--android:layout_marginRight="@dimen/basic_double_space"-->
+        <!--android:layout_marginTop="13.0dip">-->
+
+        <com.xh.study.niconico.widget.ExtraTextView
+            android:id="@+id/btn_share"
+            style="@style/ShareButtonWidget" />
+    <!--</com.dd.ShadowLayout>-->
+
+    <com.xh.study.niconico.widget.StatusView
+        android:id="@id/status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="60.0dip"
+        android:paddingTop="60.0dip" />
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xh.study.niconico.widget.VerticalDoubleSpreadView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/img_left_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true" />
+
+        <com.xh.study.niconico.widget.StatusView
+            android:id="@+id/left_status"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            app:errorTextColor="@android:color/black" />
+
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/left_progress"
+            android:layout_width="@dimen/min_component_size"
+            android:layout_height="@dimen/min_component_size"
+            android:layout_centerInParent="true"
+            app:mlpb_enable_circle_background="false"
+            app:mlpb_progress_color="@color/primary" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/img_right_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true" />
+
+        <com.xh.study.niconico.widget.StatusView
+            android:id="@+id/right_status"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            app:errorTextColor="@android:color/black" />
+
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/right_progress"
+            android:layout_width="@dimen/min_component_size"
+            android:layout_height="@dimen/min_component_size"
+            android:layout_centerInParent="true"
+            app:mlpb_enable_circle_background="false"
+            app:mlpb_progress_color="@color/primary" />
+    </RelativeLayout>
+
+    <com.xh.study.niconico.widget.CommentView
+        android:id="@+id/comment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:comment_fps="@integer/comment_fps"
+        app:comment_renderer="jp.co.dwango.seiga.manga.android.ui.widget.comment.ScrollCommentRenderer" />
+</com.xh.study.niconico.widget.VerticalDoubleSpreadView>

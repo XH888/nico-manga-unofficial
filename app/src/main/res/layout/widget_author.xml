@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4.0dip"
+    android:layout_marginTop="4.0dip"
+    android:background="@drawable/author_bg">
+
+    <com.xh.study.niconico.widget.ExtraTextView
+        android:id="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/author_icon"
+        android:paddingEnd="@dimen/basic_space"
+        android:maxLines="1"
+        android:textColor="@color/author_name_text_color"
+        android:textSize="@dimen/author_name_font_size"
+        app:ext_txt_roundedCornerBackgroundColor="#ffeeeeee"
+        app:ext_txt_roundedCornerRadius="40.0dip" />
+
+    <com.xh.study.niconico.widget.CircleImageView
+        android:id="@+id/author_icon"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginEnd="@dimen/basic_space" />
+</RelativeLayout>

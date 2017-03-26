@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/HeadLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="キーワードで探す" />
+
+    <View style="@style/HorizontalDarkBorder" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/basic_half_space">
+
+
+        <!--<com.dd.ShadowLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:sl_shadowColor="@color/shadow"-->
+            <!--app:sl_shadowRadius="4.0dip">-->
+
+            <SearchView
+                android:id="@+id/keyword_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@android:color/white"
+                android:focusable="false"
+                android:minHeight="@dimen/min_component_size"
+                android:iconifiedByDefault="false"
+                android:queryHint="キーワードを入力してください" />
+        <!--</com.dd.ShadowLayout>-->
+    </FrameLayout>
+
+    <View style="@style/HorizontalDarkBorder" />
+
+    <TextView
+        style="@style/HeadLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="カテゴリから探す" />
+
+    <View style="@style/HorizontalDarkBorder" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layout_page_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/min_component_size"
+        android:orientation="horizontal"
+        android:padding="@dimen/basic_half_space">
+        <ImageView
+            android:id="@+id/image_loading"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:src="@drawable/loading"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次のページを読み込んでいます" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/txt_empty_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/min_component_size"/>
+</FrameLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AutoClipLayout">
+        <attr name="fit_targetId" format="reference"/>
+    </declare-styleable>
+
+    <!--圆心图片-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!--比例缩放图片-->
+    <declare-styleable name="RatioImageView">
+        <attr name="ariv_heightRatio" format="integer"/>
+        <attr name="ariv_widthRatio" format="integer"/>
+    </declare-styleable>
+
+
+    <!--扩展文本框-->
+    <declare-styleable name="ExtraTextView">
+        <attr name="ext_txt_drawable" format="reference" />
+        <attr name="ext_txt_drawableSize" format="dimension" />
+        <attr name="ext_txt_drawableWidthSize" format="dimension" />
+        <attr name="ext_txt_drawableHeightSize" format="dimension" />
+        <attr name="ext_txt_drawablePosition">
+            <enum name="bottom" value="3" />
+            <enum name="left" value="0" />
+            <enum name="right" value="2" />
+            <enum name="top" value="1" />
+        </attr>
+        <attr name="ext_txt_roundedCornerRadius" format="dimension" />
+        <attr name="ext_txt_roundedCornerBorderSize" format="dimension" />
+        <attr name="ext_txt_roundedCornerBorderColor" format="color" />
+        <attr name="ext_txt_roundedCornerBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <!--浏览的数量-->
+    <declare-styleable name="CounterView">
+        <attr name="iconImageResourceId" format="reference"/>
+        <attr name="text" format="string"/>
+    </declare-styleable>
+
+    <!--折叠按钮-->
+    <declare-styleable name="ExpandableLayout">
+        <attr name="exl_collapseHeight" format="dimension" />
+        <attr name="exl_collapseTargetId" format="reference" />
+        <attr name="exl_collapsePadding" format="dimension" />
+        <attr name="exl_duration" format="integer" />
+        <attr name="exl_expanded" format="boolean" />
+    </declare-styleable>
+
+    <!--上一页、下一页-->
+    <declare-styleable name="TransitionEpisodeView">
+        <attr name="te_label" format="string" />
+        <attr name="te_type">
+            <enum name="next" value="1" />
+            <enum name="prev" value="0" />
+        </attr>
+    </declare-styleable>
+
+    <!--变换按钮-->
+    <declare-styleable name="ToggleButton">
+        <attr name="tbv_checked" format="boolean"/>
+        <attr name="tbv_textOn" format="string" />
+        <attr name="tbv_textOff" format="string" />
+        <attr name="tbv_textColor" format="color" />
+        <attr name="tbv_textSize" format="dimension" />
+        <attr name="tbv_txt_drawableOn" format="reference" />
+        <attr name="tbv_txt_drawableOff" format="reference" />
+        <attr name="tbv_txt_drawableSize" format="dimension" />
+        <attr name="tbv_txt_drawablePadding" format="dimension" />
+        <attr name="tbv_txt_drawablePosition">
+            <enum name="bottom" value="3" />
+            <enum name="left" value="0" />
+            <enum name="right" value="2" />
+            <enum name="top" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--评论滚动列表视图-->
+    <declare-styleable name="CommentView">
+        <attr name="comment_fps" format="integer" />
+        <attr name="comment_renderer" format="string" />
+        <attr name="comment_draw_manually" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="StatusView">
+        <attr name="errorTextColor" format="color"/>
+    </declare-styleable>
+</resources>

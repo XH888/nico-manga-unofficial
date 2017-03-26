@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_main">
+        <item android:icon="@drawable/icon_home" android:id="@+id/menu_home" android:title="@string/screen_home" />
+        <item android:icon="@drawable/icon_rank" android:id="@+id/menu_ranking" android:title="@string/screen_ranking" />
+        <item android:icon="@drawable/icon_manga" android:id="@+id/menu_official" android:title="@string/screen_official" />
+        <item android:icon="@drawable/icon_search" android:id="@+id/menu_search" android:title="@string/screen_search" />
+    </group>
+    <group android:id="@+id/menu_user">
+        <item android:icon="@drawable/icon_favorite_star_clear60" android:id="@+id/menu_favorite" android:title="@string/screen_favorite" />
+        <item android:icon="@drawable/icon_history" android:id="@+id/menu_read_history" android:title="@string/screen_read_history" />
+    </group>
+    <group android:id="@+id/menu_other">
+        <item android:id="@+id/menu_info" android:title="@string/screen_info" />
+        <item android:id="@+id/menu_feedback" android:title="@string/screen_feedback" />
+        <item android:id="@+id/menu_setting" android:title="@string/screen_setting" />
+    </group>
+</menu>
