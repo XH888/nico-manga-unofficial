@@ -6,5 +6,5 @@
 
 ## 截图
 
-<img width='30%' src='cap/device-2017-03-26-181212.png'><img width='30%' src='cap/device-2017-03-26-181332.png'><img width='30%' src='cap/device-2017-03-26-181358.png'>
-<img width='30%' src='cap/device-2017-03-26-181411.png'><img width='30%' src='cap/device-2017-03-26-181442.png'><img width='30%' src='cap/device-2017-03-26-181524.png'>
+<img width='30%' src='cap/device-2017-03-26-181212.png'> <img width='30%' src='cap/device-2017-03-26-181332.png'> <img width='30%' src='cap/device-2017-03-26-181358.png'>
+<img width='30%' src='cap/device-2017-03-26-181411.png'> <img width='30%' src='cap/device-2017-03-26-181442.png'> <img width='30%' src='cap/device-2017-03-26-181524.png'>
